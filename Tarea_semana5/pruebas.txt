@@ -1,0 +1,5 @@
+http://localhost:3000: Es la ruta raíz (/). Al acceder a ella, el servidor  responde con un mensaje de bienvenida general, la página de inicio del proyecto o una confirmación de que el servidor está levantado y escuchando peticiones de forma correcta.
+
+http://localhost:3000/saludo: Esta ruta ejecuta un endpoint específico programado para devolver un saludo estático o general predefinido en el backend (por ejemplo, devolviendo un texto plano o un JSON que dice "¡Hola!").
+
+http://localhost:3000/mensaje/juan: Es una ruta dinámica que utiliza parámetros de segmento (:nombre). El servidor extrae el valor "juan" de la URL para procesar  una respuesta personalizada directamente en el navegador.

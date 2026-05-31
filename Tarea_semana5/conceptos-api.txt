@@ -1,0 +1,19 @@
+
+¿Qué hace esta ruta?
+
+Esta ruta establece un endpoint de tipo POST en el servidor bajo la dirección '/reporte'. A diferencia de las rutas GET (que solo solicitan información), esta ruta está diseñada para recibir datos enviados por el usuario o cliente de manera segura en el cuerpo de la petición. 
+
+El código realiza los siguientes pasos de forma secuencial:
+  - Captura un fragmento de información específico enviado por el cliente, en este caso, la propiedad 'mensaje' dentro de 'req.body'.
+  - Almacena temporalmente ese valor en una variable constante llamada 'mensaje'.
+  - Responde de vuelta al cliente de manera inmediata utilizando formato JSON (res.json), confirmando el éxito de la operación con un estado estructurado (Reporte recibido) y reflejando el mismo mensaje que fue enviado para validar que los datos llegaron correctamente.
+
+
+
+
+¿Para qué podría servir en una aplicación comunitaria?
+
+En el contexto de una plataforma o iniciativa ciudadana, esta funcionalidad es fundamental para la participación activa. Podría servir para:
+  - Enviar reportes ciudadanos en tiempo real: Permitir a los vecinos notificar incidentes en la infraestructura pública, como baches, luminarias rotas o acumulación de basura.
+  - Alertar sobre emergencias o riesgos: Servir como canal directo para reportar un problema de seguridad o una situación climática peligrosa dentro del barrio.
+  - Recibir sugerencias y votos: Funcionar como un buzón digital donde los miembros de la comunidad envían propuestas de mejora o proyectos locales para que el servidor los procese y guarde en una base de datos.
